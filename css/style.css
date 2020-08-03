@@ -1,0 +1,134 @@
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:rgba(0,0,0,0.2);
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
+#logo-container {
+    font-size: 2em;
+}
+.judul {
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+#klub, #team-saved {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mycard {
+    flex: auto;
+    width:32%;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    position:relative;
+}
+
+.mycard:hover {
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    transition: all 0.5s;
+}
+.mycard p {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 0;
+    margin:0;
+}
+.my-image {
+    text-align: center;
+}
+.my-image img {
+    width: 80%;
+    padding: 10px;
+}
+
+
+.card-team {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .logo-team {
+    width: 200px;
+    margin: 0 auto;
+}
+ .logo-team img {
+     width: 100%;
+ }
+ 
+ .desc-team p {
+     padding: 0;
+     margin: 0;
+ }
+
+.card-saved {
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    width: 32.5%;
+    max-height: 250px;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.delete-team {
+    margin: 5px 0;
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.table-klasemen {
+    width: 70%;
+    margin: 0 auto;
+}
+.logo-klasemen img {
+    width: 80%;
+}
+.tr-head th:nth-child(1),
+.tr-head th:nth-child(2)  {
+    width: 50px;
+    text-align: center;
+}
+
+.tr-body:hover {
+    background-color: rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+@media (max-width:1000px) {
+    .mycard {
+        width:48%;
+    }
+    .my-image img {
+        width: 70%;
+    }
+    .table-klasemen {
+        width: 100%;
+    }
+}
+@media (max-width:670px) {
+    .mycard {
+        width:100%;
+    }
+    .my-image img {
+        width: 60%;
+    }
+    .table-klasemen {
+        width: 85%;
+    }
+    .col-hide {
+        display: none;
+    }
+}
